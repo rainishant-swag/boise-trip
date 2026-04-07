@@ -122,6 +122,7 @@ footer strong{color:var(--rust);}
   <a href="#day4" class="d4">Day 4 &middot; Return</a>
   <a href="#restaurants" class="sec">&#127859; Indian Food</a>
   <a href="#gmaps" class="sec">&#128506; Maps</a>
+  <a href="#stores" class="sec">&#128722; Stores</a>
   <a href="#tips" class="sec">&#128161; Tips</a>
 </nav>
 
@@ -623,6 +624,60 @@ footer strong{color:var(--rust);}
 </div>
 </section>
 
+
+<!-- NEARBY STORES -->
+<section id="stores" style="padding:56px 0;border-top:1px solid var(--border);">
+<div class="container">
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:6px;">&#128722; Nearest Costco &amp; Fred Meyer</h2>
+  <p style="font-size:0.9rem;color:rgba(26,18,8,0.5);margin-bottom:28px;">Both are very close to your Airbnb &mdash; stock up on arrival evening for snacks, drinks &amp; breakfast items for the stay</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+
+    <div style="background:#E8F4FB;border:1px solid rgba(46,107,158,0.2);border-left:4px solid #2E6B9E;border-radius:12px;padding:22px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <span style="font-size:1.8rem;">&#127981;</span>
+        <div>
+          <div style="font-weight:700;font-size:1.05rem;">Costco Wholesale</div>
+          <div style="font-size:0.75rem;color:rgba(26,18,8,0.5);text-transform:uppercase;letter-spacing:1px;">Meridian, ID &mdash; <strong style="color:#375623;">~3 mi · ~5 min</strong></div>
+        </div>
+      </div>
+      <div style="font-size:0.85rem;color:rgba(26,18,8,0.65);line-height:1.7;margin-bottom:12px;">
+        <strong>3403 W Chinden Blvd, Meridian, ID 83646</strong><br>
+        Mon&ndash;Fri: 10 AM&ndash;8:30 PM<br>
+        Sat: 9:30 AM&ndash;7 PM &nbsp;&middot;&nbsp; Sun: 10 AM&ndash;6 PM<br>
+        &#9742; +1 986-200-4136
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=3403+W+Chinden+Blvd,+Meridian,+ID+83646" target="_blank" style="font-size:0.73rem;font-weight:500;padding:5px 12px;border-radius:20px;text-decoration:none;background:var(--sky-light);color:var(--sky);border:1px solid rgba(46,107,158,0.2);">&#128205; Directions</a>
+        <a href="https://www.costco.com/warehouse-locations/meridian-id-1262.html" target="_blank" style="font-size:0.73rem;font-weight:500;padding:5px 12px;border-radius:20px;text-decoration:none;background:var(--sage-light);color:var(--sage);border:1px solid rgba(74,103,65,0.2);">&#127760; costco.com</a>
+      </div>
+    </div>
+
+    <div style="background:#EBF5E8;border:1px solid rgba(74,103,65,0.2);border-left:4px solid #4A6741;border-radius:12px;padding:22px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <span style="font-size:1.8rem;">&#127839;</span>
+        <div>
+          <div style="font-weight:700;font-size:1.05rem;">Fred Meyer</div>
+          <div style="font-size:0.75rem;color:rgba(26,18,8,0.5);text-transform:uppercase;letter-spacing:1px;">Nampa, ID &mdash; <strong style="color:#375623;">~8 mi · ~12 min</strong></div>
+        </div>
+      </div>
+      <div style="font-size:0.85rem;color:rgba(26,18,8,0.65);line-height:1.7;margin-bottom:12px;">
+        <strong>50 2nd St S, Nampa, ID 83651</strong><br>
+        Daily: 7 AM&ndash;11 PM<br><br>
+        &#9742; +1 208-465-2830
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=50+2nd+St+S,+Nampa,+ID+83651" target="_blank" style="font-size:0.73rem;font-weight:500;padding:5px 12px;border-radius:20px;text-decoration:none;background:var(--sky-light);color:var(--sky);border:1px solid rgba(46,107,158,0.2);">&#128205; Directions</a>
+        <a href="https://www.fredmeyer.com/stores/details/701/00344" target="_blank" style="font-size:0.73rem;font-weight:500;padding:5px 12px;border-radius:20px;text-decoration:none;background:var(--sage-light);color:var(--sage);border:1px solid rgba(74,103,65,0.2);">&#127760; fredmeyer.com</a>
+      </div>
+    </div>
+
+  </div>
+  <div style="margin-top:16px;background:#EAF3DE;border-radius:10px;padding:14px 18px;font-size:0.85rem;color:#375623;border-left:4px solid #4A6741;">
+    &#128161; <strong>Tip:</strong> Stock up at Costco on arrival evening (Day 1) for snacks, drinks &amp; breakfast items for the whole 3-night stay. Fred Meyer Nampa is perfect for fresh produce, deli items &amp; last-minute needs &mdash; open till 11 PM daily!
+  </div>
+</div>
+</section>
+
 <!-- TIPS -->
 <section id="tips" class="tsec">
 <div class="container">
@@ -652,7 +707,7 @@ footer strong{color:var(--rust);}
 </footer>
 
 <script>
-const secs=['day1','day2','day3','day4','restaurants','gmaps','tips'];
+const secs=['day1','day2','day3','day4','restaurants','gmaps','stores','tips'];
 const links=document.querySelectorAll('.day-nav a');
 window.addEventListener('scroll',()=>{
   let cur='';
